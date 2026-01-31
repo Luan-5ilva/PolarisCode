@@ -121,13 +121,6 @@ function setupScrollEffects() {
             header.classList.remove('scrolled');
         }
 
-        // Parallax effect no vídeo de fundo
-        const videoBackground = document.querySelector('.video-background video');
-        if (videoBackground) {
-            const scrolled = currentScrollPosition;
-            videoBackground.style.transform = `translate(-50%, calc(-50% + ${scrolled * 0.3}px))`;
-        }
-
         lastScrollPosition = currentScrollPosition;
         appState.scrollPosition = currentScrollPosition;
     }, 10));
