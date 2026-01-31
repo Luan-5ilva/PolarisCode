@@ -69,13 +69,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
     overflow: hidden;
 }
 
 .video-background video {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -84,11 +84,10 @@ body {
     height: auto;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    z-index: -1;
 }
 
 .video-overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -98,7 +97,6 @@ body {
             rgba(0, 0, 0, 0.3) 50%,
             rgba(0, 0, 0, 0.4) 100%);
     backdrop-filter: blur(0px);
-    z-index: -1;
 }
 
 /* ====================================
@@ -263,7 +261,7 @@ body {
 
 .hero-description {
     font-size: var(--font-size-lg);
-    color: var(--color-text);
+    color: var(--color-text-muted);
     max-width: 700px;
     margin: 0 auto var(--spacing-lg);
     line-height: 1.8;
@@ -475,9 +473,15 @@ section.hero {
 
 .sobre-image {
     animation: fadeInRight 1s ease-out;
+    padding: 30px;
     border-radius: 24px;
     overflow: hidden;
     box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+    max-height: 550px;
 }
 
 .sobre-image img {
@@ -488,7 +492,7 @@ section.hero {
 }
 
 .sobre-image:hover img {
-    transform: scale(1.05);
+    transform: scale(0.75);
 }
 
 /* ====================================
@@ -915,9 +919,23 @@ section.hero {
         gap: var(--spacing-lg);
     }
 
+    .sobre-image {
+        max-width: 350px;
+        max-height: 350px;
+        margin: 1 auto;
+    }
+
+    .sobre-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform var(--transition-slow);
+    }
+
     .footer-content {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -1002,6 +1020,18 @@ section.hero {
         grid-template-columns: 1fr;
     }
 
+    .sobre-image {
+        max-width: 200px;
+        max-height: 200px;
+
+    }
+
+    .sobre-image img {
+        max-width: 250px;
+        max-height: 250px;
+
+    }
+
     .servicos-grid {
         grid-template-columns: 1fr;
     }
@@ -1037,6 +1067,11 @@ section.hero {
 
     .logo-text {
         font-size: var(--font-size-lg);
+    }
+
+    .sobre-image {
+        max-width: 100%;
+        max-height: 280px;
     }
 }
 
