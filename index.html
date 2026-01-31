@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Polaris Code - Soluções em Software que Guiam seu Negócio">
+    <title>Polaris Code - Sua Estrela Guia em Tecnologia</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+
+<body>
+    <!-- Vídeo de Fundo -->
+    <div class="video-background">
+        <!-- INSIRA SEU VÍDEO AQUI: Vídeo simulando movimento de estrela Polaris -->
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="/assets/videos/polaris-star.webm" type="video/webm">
+            <!-- Fallback para navegadores que não suportam vídeo -->
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <!-- INSIRA SEU LOGO AQUI -->
+                <img src="images/logo.png" alt="Polaris Code Logo" class="logo-img">
+                <span class="logo-text">Polaris Code</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="star-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0L32.5 27.5L60 30L32.5 32.5L30 60L27.5 32.5L0 30L27.5 27.5L30 0Z" fill="#FFD700" />
+                    </svg>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Sua Estrela Guia</span>
+                    <span class="title-line">em Tecnologia</span>
+                </h1>
+                <p class="hero-description">
+                    Assim como a Polaris orienta navegadores há séculos,
+                    guiamos seu negócio através das complexidades do mundo digital
+                    com soluções de software inovadoras e precisas.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contato" class="btn btn-primary">Iniciar Jornada</a>
+                    <a href="#servicos" class="btn btn-secondary">Conhecer Soluções</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para explorar</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Quem Somos</span>
+                <h2 class="section-title">Navegando o Futuro da Tecnologia</h2>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p class="lead-text">
+                        A Polaris Code nasceu da visão de criar soluções tecnológicas
+                        que servem como pontos de referência confiáveis no universo digital.
+                    </p>
+                    <p>
+                        Combinamos expertise técnica com design intuitivo para desenvolver
+                        sistemas que não apenas funcionam perfeitamente, mas guiam seus
+                        usuários de forma natural e eficiente.
+                    </p>
+                    <div class="sobre-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Projetos Entregues</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">Taxa de Satisfação</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image">
+                    <!-- INSIRA SUA IMAGEM AQUI: Imagem representativa da empresa -->
+                    <img src="images/sobre.jpg" alt="Polaris Code - Equipe e Tecnologia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">O Que Fazemos</span>
+                <h2 class="section-title">Soluções que Guiam seu Sucesso</h2>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="5" width="30" height="30" stroke="#FFD700" stroke-width="2" />
+                            <path d="M15 20L18 23L25 16" stroke="#FFD700" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="servico-title">Desenvolvimento Web</h3>
+                    <p class="servico-description">
+                        Sites e aplicações web responsivas, modernas e otimizadas
+                        para performance e experiência do usuário.
+                    </p>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="5" width="20" height="30" rx="2" stroke="#FFD700" stroke-width="2" />
+                            <line x1="15" y1="10" x2="25" y2="10" stroke="#FFD700" stroke-width="2" />
+                            <line x1="15" y1="15" x2="25" y2="15" stroke="#FFD700" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="servico-title">Aplicativos Mobile</h3>
+                    <p class="servico-description">
+                        Aplicativos nativos e híbridos que conectam sua marca
+                        aos usuários em qualquer dispositivo.
+                    </p>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="15" stroke="#FFD700" stroke-width="2" />
+                            <path d="M20 10V20L25 25" stroke="#FFD700" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="servico-title">Sistemas Personalizados</h3>
+                    <p class="servico-description">
+                        Soluções sob medida que automatizam processos e
+                        impulsionam a eficiência do seu negócio.
+                    </p>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20H35M20 5V35" stroke="#FFD700" stroke-width="2" />
+                            <circle cx="20" cy="20" r="5" stroke="#FFD700" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="servico-title">Consultoria Tech</h3>
+                    <p class="servico-description">
+                        Orientação estratégica para escolher as melhores
+                        tecnologias e arquiteturas para seu projeto.
+                    </p>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="15" width="30" height="15" stroke="#FFD700" stroke-width="2" />
+                            <path d="M12 15V10H28V15" stroke="#FFD700" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="servico-title">Cloud & DevOps</h3>
+                    <p class="servico-description">
+                        Infraestrutura escalável e processos automatizados
+                        para garantir disponibilidade e segurança.
+                    </p>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 30L20 10L30 30H10Z" stroke="#FFD700" stroke-width="2" />
+                            <circle cx="20" cy="23" r="2" fill="#FFD700" />
+                        </svg>
+                    </div>
+                    <h3 class="servico-title">UI/UX Design</h3>
+                    <p class="servico-description">
+                        Interfaces intuitivas e experiências memoráveis que
+                        guiam naturalmente seus usuários ao sucesso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo Section -->
+    <section class="processo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nossa Metodologia</span>
+                <h2 class="section-title">Guiados pela Excelência</h2>
+            </div>
+            <div class="processo-timeline">
+                <div class="processo-item">
+                    <div class="processo-number">01</div>
+                    <h3 class="processo-title">Descoberta</h3>
+                    <p class="processo-description">
+                        Entendemos profundamente seu negócio, desafios e objetivos.
+                    </p>
+                </div>
+                <div class="processo-item">
+                    <div class="processo-number">02</div>
+                    <h3 class="processo-title">Planejamento</h3>
+                    <p class="processo-description">
+                        Definimos estratégias, tecnologias e arquitetura ideal.
+                    </p>
+                </div>
+                <div class="processo-item">
+                    <div class="processo-number">03</div>
+                    <h3 class="processo-title">Desenvolvimento</h3>
+                    <p class="processo-description">
+                        Construímos com código limpo, seguro e escalável.
+                    </p>
+                </div>
+                <div class="processo-item">
+                    <div class="processo-number">04</div>
+                    <h3 class="processo-title">Entrega</h3>
+                    <p class="processo-description">
+                        Lançamos e acompanhamos para garantir o sucesso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="contato-content">
+                <div class="contato-info">
+                    <span class="section-label">Fale Conosco</span>
+                    <h2 class="section-title">Vamos Criar Juntos</h2>
+                    <p class="lead-text">
+                        Pronto para transformar sua visão em realidade?
+                        Entre em contato e descubra como podemos guiar
+                        seu negócio ao sucesso digital.
+                    </p>
+                    <div class="contato-detalhes">
+                        <div class="contato-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 8L10.89 13.26C11.54 13.67 12.46 13.67 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z"
+                                    stroke="#FFD700" stroke-width="2" />
+                            </svg>
+                            <span>contato@polariscode.com</span>
+                        </div>
+                        <div class="contato-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
+                                    stroke="#FFD700" stroke-width="2" />
+                            </svg>
+                            <span>+55 (11) 9999-9999</span>
+                        </div>
+                        <div class="contato-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                    stroke="#FFD700" stroke-width="2" />
+                            </svg>
+                            <span>São Paulo, Brasil</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contato-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <!-- INSIRA SEU LOGO AQUI -->
+                        <img src="images/logo.png" alt="Polaris Code Logo" class="logo-img">
+                        <span class="logo-text">Polaris Code</span>
+                    </div>
+                    <p class="footer-tagline">Sua estrela guia em tecnologia</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Redes Sociais</h4>
+                        <ul>
+                            <li><a href="#" target="_blank">LinkedIn</a></li>
+                            <li><a href="#" target="_blank">GitHub</a></li>
+                            <li><a href="#" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Polaris Code. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
